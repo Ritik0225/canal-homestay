@@ -1,0 +1,120 @@
+.aboutus {
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .aboutus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../assests/pic7.jpg") center;
+    background-size: cover;
+    z-index: -2;
+  }
+  .aboutus h1{
+      color: var(--color-white);
+      font-size: 4rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+
+  .aboutusContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .aboutusContainer_left, .aboutusContainer_right{
+    flex:  1;
+  }
+  .aboutusContainer_right{
+    display: flex;
+    justify-content: center;
+  }
+  .aboutusContainer_left{
+    width: 50%;
+    background-color: var(--color-offWhite);
+  }
+  .aboutusContainer_right-imgBox{
+    
+    width: 70%;
+    height: 600px;
+    border-radius: 15px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 0;
+  }
+  
+  .aboutusContainer_right-imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+ 
+  .aboutusContainer_left_subtext{
+
+    padding: 7rem;
+    border-radius: 15px;
+  }
+  .aboutusContainer_left_subtext h2{
+    font-family: var(--font-script);
+    font-size: 4rem;
+    color: var(--color-purple);
+    /* margin: 2rem 0; */
+  }
+  .aboutusContainer_left_subtext h3{
+    font-size: 1.4rem;
+    color: var(--color-bgBlack);
+    /* margin: 2rem 0; */
+  }
+  .aboutusContainer_left_subtext p{
+    font-size: 1rem;
+    color: var(--color-bgBlack);
+    margin: 2rem 0;
+  }
+  .aboutusContainer_left_subtext_iconBox{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .aboutusContainer_left_subtext_iconBox h4{
+    font-weight: 400;
+    color: var(--color-bgBlack);
+    padding-left: 1rem;    
+  }
+
+  .aboutusContainer2{
+    padding: 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutusContainer2 h2{
+    font-size: 3rem;
+    color: var(--color-purple);
+    margin-bottom: 3rem;
+  }
+  .aboutusContainer2_info{
+    padding: 0 6rem;
+  }
+  .aboutusContainer2_info li{ 
+    margin: 1rem 0;
+    list-style: none;
+  }
+  .aboutusContainer2 .text-bold{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-purple);
+  }
